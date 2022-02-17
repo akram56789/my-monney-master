@@ -5,32 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baaper Bank</title>
-    <link rel="stylesheet" href="style.css">
+    <title>my money</title>
+    <!-- tailwind file -->
     <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
-<body class="bg-gray ">
+<body>
     <header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, odio!</p>
-        <h1 class="text-4xl text-center mt-16 ">Welcome to my <span class="font-semibold text-emerald-500 ">Baaper
-                Bank</span></h1>
-
+        <h1 class="text-4xl text-green-500 text-center font-semibold mt-6	">My Money</h1>
     </header>
     <main>
-        <section id="section1" class="    mx-auto  mt-8 p-8">
-            <h3 class="text-2xl  text-center ">Please Login</h3>
-            <div class="text-center mt-4">
-                <input id="user-email" class="border-2    p- border-green-500 rounded   px-2" type="text"
-                    placeholder="your email"> <br>
+        <section>
+            <div class=" flex flex-nowrap">
+                <div class="w-2/3">
+                    <img class="ml-16 mt-16    " src="images/money2.jpg" alt="">
+                </div>
+                <div class="bg-zinc-400 p-2  rounded w-1/4 mt-16 text-center ml-16 ">
+                    <div class="mt-6">
+                        <h1 class="text-center font-semibold">income</h1>
+                    </div>
+                    <form class="mt-4">
+                        <label>income:</label>
+                        <input id="income-input" class="" type="text">
+                    </form>
+                    <h1 class="text-center mt-4 font-semibold">Expenses</h1>
+                    <div class="">
+                        <label for="">Food:</label>
+                        <input id="food-input" class=" ml-4 mt-4" type="number">
+                    </div>
+                    <div class="mt-4 ml-4">
+                        <label class="class=" w-3/4"" for="">Rent:</label>
+                        <input id="rent-input" class="ml-2" type="number">
+                    </div>
+                    <div class="mt-4">
+                        <label class="" for="">Clothes:</label>
+                        <input id="clothes-input" class="" type="text">
+                    </div>
+                    <button id="celculet-button"
+                        class="bg-blue-400 w-32 font-semibold mt-4 rounded p-2	">Celculet</button>
 
-                <input id="user-password" class="border-2  border-green-500 rounded mt-4   px-2" type="password" name=""
-                    id="" placeholder="password"> <br>
-                <button id="ligin-submit" class=" bg-emerald-300 font-semibold rounded mt-4  px-4 py-2 ">Submit</button>
+                    <div class="mt-4">
+                        <h3>Total Expenses: <span>0000</span> </h3>
+                        <h3>Balance: <span>0000</span></h3>
+
+                    </div>
+                    <div class="mt-4">
+                        <label class="" for="">Save:</label>
+                        <input class="w-32" type="text"> <span>%</span>
+                        <button id="save-button" class="bg-blue-300 rounded w-20">save</button>
+                    </div>
+                    <div class="mt-4">
+                        <h3>Saving Amount: <span>0000</span></h3>
+                        <h3>Remaining Balance: <span>0000</span></h3>
+                    </div>
+                </div>
             </div>
+
+
+
         </section>
     </main>
-    <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
