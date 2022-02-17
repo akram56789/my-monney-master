@@ -1,4 +1,8 @@
 document.getElementById('celculet-button').addEventListener('click', function () {
+    const erorMassege = document.getElementById('eror');
+    if (newIncomeAmount < updetTotal[erorMassege.style.display = block]);
+
+
 
     // get the amount income
     const incomeInput = document.getElementById('income-input');
