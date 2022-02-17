@@ -16,8 +16,6 @@ document.getElementById('celculet-button').addEventListener('click', function ()
 
     // get the food amount 
 
-    const foodInput = document.getElementById('food-input');
-
     const newFoodAmountText = foodInput.value;
     const newFoodAmount = parseFloat(newFoodAmountText);
     console.log(newFoodAmount);
