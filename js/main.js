@@ -44,9 +44,9 @@ document.getElementById('celculet-button').addEventListener('click', function ()
     // clear the input field 
     clothesInput.value = '';
 
-    // get  total cost 
+    // get  total Expenses
 
-    // const totalCost = document.getElementsByClassName('totalCost');
+
     const totalCost = document.getElementById('total-expen');
 
     const previusTotalCost = totalCost.innerText;
@@ -55,6 +55,7 @@ document.getElementById('celculet-button').addEventListener('click', function ()
     const updetTotal = newFoodAmount + newRentAmount + newClothesAmount;
     totalCost.innerText = updetTotal;
 
+    // get balance
     const balance = document.getElementById('Balance');
 
     const updetBalance = balance.innerText;
