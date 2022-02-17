@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16 "> দেখেনিন আপনার <span class="font-semibold text-emerald-500 ">লেনদেন
+                !! </span>
+        </h1>
+
+    </header>
+    <main class="w-3/4 mx-auto">
+        <!-- Balance and Transection
+         -->
+        <section class="mt-8">
+            <div class="  grid grid-cols-3 gap-4 ">
+                <div class="bg-sky-400 p-8 rounded-lg text-center text-white 	">
+                    <h3 class="text-2xl">জমা</h3>
+                    <h4 class="text-5xl">৳ <span id="deposit-total">00</span></h4>
+                </div>
+                <div class="bg-red-400 p-8 rounded-lg text-center text-white 	">
+                    <h3 class="text-2xl">উঠাইছেন</h3>
+                    <h4 class="text-5xl">৳ <span id="withdraw-total">00</span></h4>
+                </div>
+                <div class="bg-emerald-400	 p-8 rounded-lg text-center text-white 	">
+                    <h3 class="text-2xl">বর্তমানে আছে</h3>
+                    <h4 class="text-5xl">৳<span id="balance-total">7500</span></h4>
+                </div>
+
+            </div>
+        </section>
+        <!-- Diposit and Widthdraw -->
+        <section class="mt-8 ">
+            <div class=" grid grid-cols-2 ">
+                <div class=" bg-violet-200	rounded-lg p-4 w-3/4 ml-16 ">
+                    <h3 class="text-2xl mb-4  ">জমা দেন</h3>
+                    <div>
+                        <input id="deposit-input" class=" border-2 block p- border-green-200 rounded-lg    mb-4 px-2"
+                            type="number" placeholder="৳ টাকার পরিমান">
+
+                        <button id="deposit-button"
+                            class="bg-green-200		 font-semibold rounded   px-4 py-2 ">দেন</button>
+                    </div>
+                </div>
+                <div class=" bg-orange-200 rounded-lg p-4 w-3/4 ml-6">
+                    <h3 class="text-2xl mb-4 ">উঠান</h3>
+                    <div>
+                        <input id="withdraw-input" class="border-2 block p- border-red-200 rounded-lg    mb-4 px-2"
+                            type="number" placeholder="৳ টাকার পরিমান">
+
+                        <button id="withdraw-button"
+                            class=" bg-red-300		 font-semibold rounded   px-4 py-2  ">নেন</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
