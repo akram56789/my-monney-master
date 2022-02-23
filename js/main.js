@@ -1,6 +1,6 @@
 document.getElementById('celculet-button').addEventListener('click', function () {
-    const erorMassege = document.getElementById('eror');
-    if (newIncomeAmount < updetTotal[erorMassege.style.display = block]);
+    // const erorMassege = document.getElementById('eror');
+    // if (newIncomeAmount < updetTotal[erorMassege.style.display = block]);
 
 
 
@@ -15,6 +15,7 @@ document.getElementById('celculet-button').addEventListener('click', function ()
     incomeInput.value = '';
 
     // get the food amount 
+    const foodInput = document.getElementById('food-input');
 
     const newFoodAmountText = foodInput.value;
     const newFoodAmount = parseFloat(newFoodAmountText);
